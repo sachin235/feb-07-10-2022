@@ -33,3 +33,4 @@ let s: string = "Hello";
 * Latest version of TS is 4.x
 * __sudo npm i -g typescript__
 * __tsc --version__
+* __tsc --watch  src/*.ts --outDir dist --target esnext__
