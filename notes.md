@@ -34,3 +34,4 @@ let s: string = "Hello";
 * __sudo npm i -g typescript__
 * __tsc --version__
 * __tsc --watch  src/*.ts --outDir dist --target esnext__
+* __tsc --init__ generates __tsconfig.json__
