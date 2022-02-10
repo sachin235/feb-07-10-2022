@@ -1,6 +1,8 @@
+
 abstract class Employee {
+    
     constructor(public id: number, public name: string) {}
-    public logInToWork() {
+    public logInToWork(): any {
         console.log(`Employee ${this.name} is logging in to work`);
     }
     abstract work(): void;
