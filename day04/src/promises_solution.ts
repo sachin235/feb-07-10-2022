@@ -24,12 +24,14 @@ const squareIt = (num: number) => {
 
 const printResult = (result: number) => console.log("Result", result);
 
-function doSomething() {
-   generateIt()
+async function doSomethingElse() {
+    await generateIt()
      .then((num: number) => incrementIt(num))
      .then((num: number) => squareIt(num))
      .then((num: number) => printResult(num))
      .catch(res => console.log("Error", res));
+   
+    console.log("end of doSomethingElse");
 }
-doSomething();
-console.log("end of program");
+doSomethingElse();
+//console.log("end of program");
