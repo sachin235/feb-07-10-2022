@@ -1,5 +1,6 @@
 let a: string = "12";
 
+let x: number = Number(a);
 let i: number = +a;
 let j: number = parseInt(a); //Most widely used
 let k: number = <number><unknown>a; //WEIRD syntax
@@ -7,7 +8,7 @@ console.log(typeof i, typeof j, typeof k);
 
 let b: string = "true";
 
-let bool1: boolean = <boolean><unknown>b; //ToDo
+let bool1: boolean = Boolean(b); 
 console.log(typeof bool1);
 
 class Animal {
@@ -25,6 +26,9 @@ if(h instanceof Horse) {
     let horse = h as Horse; //more commonly used
     horse.run();
 }
+
+//Primitive types
+//Type(value)
 
 //Reference types
 //<type>variable
