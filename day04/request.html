@@ -1,0 +1,9 @@
+<html>
+    <head>
+        fetch('url')
+            .then(res => res.json())
+            .then(res => document.elementById('res').innerHTML = res)
+            .catch(err => document.elementById('res').innerHTML = "Error");
+    </head>
+    <body></body>
+</html>
